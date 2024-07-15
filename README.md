@@ -1,3 +1,10 @@
+Thanks for giving me the opportunity, but i was unavailable yesterday so i saw the assignment today morning, i have made this much in 7-8 hours. 
+If you can please consider that.
+
+Deployes site link - https://master--beyondchatassign.netlify.app/
+
+In this app i have added the functionality of theme toggle, DM page when you click on a chat also scrollable horizontal bar.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
