@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Grid, ThemeProvider, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
-function HorizontalScrollBar({}) {
+function HorizontalScrollBar() {
   return (
     <Box
       sx={{

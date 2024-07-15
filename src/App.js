@@ -21,7 +21,6 @@ import Main from "./components/Main";
 import DmPage from "./components/DM";
 import { useEffect, useState } from "react";
 import {
-  AccountCircle,
   Brightness4,
   Brightness7,
   Send,
@@ -29,7 +28,6 @@ import {
 
 function App() {
   const { theme, toggleTheme } = useThemeToggle();
-  const [themee, setTheme] = useState("lightTheme");
   const [dmPageToggle, setDmPageToggle] = useState(false);
   const [chatId, setChatId] = useState();
   const [width, setWidth] = useState(window.innerWidth);

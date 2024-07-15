@@ -5,35 +5,24 @@ import moment from "moment";
 import { GetInitials } from "../utils/GetInitials";
 import EditIcon from '@mui/icons-material/Edit';
 
-const chats = [];
-const Main = ({ setDmPageToggle, setChatId,toggleTheme }) => {
+const Main = ({ setDmPageToggle }) => {
   const [chats, setChats] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchChats = async () => {
-      setLoading(true);
       try {
         const response = await axios.get(
           "https://devapi.beyondchats.com/api/get_all_chats?page=1"
         );
         setChats(response.data.data.data);
-
-        console.log(response.data.data.data);
       } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
+        return
       }
     };
     fetchChats();
   }, []);
 
   const ChatItem = ({ item }) => {
-    const handleClick = () => {
-      console.log(item.id);
-    };
     const lastMessage = "Thank you for the opportunity";
     const dateTimeString = item.updated_at;
     const momentDateTime = moment(dateTimeString);
@@ -51,7 +40,6 @@ const Main = ({ setDmPageToggle, setChatId,toggleTheme }) => {
         container
         spacing={2}
         alignItems="center"
-        // onClick={() => handleClick}
         onClick={()=>setDmPageToggle(true)}
       >
         <Grid item>
