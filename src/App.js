@@ -30,15 +30,8 @@ function App() {
   const { theme, toggleTheme } = useThemeToggle();
   const [dmPageToggle, setDmPageToggle] = useState(false);
   const [chatId, setChatId] = useState();
-  const [width, setWidth] = useState(window.innerWidth);
   const [toggleHamburger, setToggleHambergur] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-  }, [dmPageToggle]);
 
   return (
     <ThemeProvider theme={theme}>
