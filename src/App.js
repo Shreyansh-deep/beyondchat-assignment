@@ -19,7 +19,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import Main from "./components/Main";
 import DmPage from "./components/DM";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Brightness4,
   Brightness7,

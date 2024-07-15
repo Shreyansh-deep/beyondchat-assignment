@@ -34,7 +34,7 @@ const Main = ({ setDmPageToggle }) => {
       } else {
         return momentDateTime.format("hh:mm A");
       }
-    });
+    },[currentDate,momentDateTime]);
     return (
       <Grid
         container
